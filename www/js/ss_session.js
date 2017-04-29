@@ -3,6 +3,7 @@ var app = angular.module('angularjs-starter', []);
 app.controller('SaveSessionCtrl', function($scope, Session) {
   $scope.name = 'World';
   $scope.session = Session;
+  var bank_acct = Session.updateSession();
 });
 
 app.factory('Session', function($http) {
