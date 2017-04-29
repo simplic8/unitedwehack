@@ -10,3 +10,10 @@
 		"bank_balance": "500",
 		"datetime_stamp": "29042017000000"
 }]
+
+
+// Copy the code below into your javascript
+var mydata = '{ "bank_acct_info" : [' +
+'{ "id":"000001" , "account_balance":"2000", "datetime":"29042017000000" },' +
+'{ "id":"000002" , "account_balance":"1000", "datetime":"29042017000000" },' +
+'{ "id":"000003" , "account_balance":"4000", "datetime":"29042017000000" } ]}';
