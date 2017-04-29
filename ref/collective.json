@@ -1,0 +1,12 @@
+[{
+	"0000001": {
+		"bank_balance": "1000",
+		"datetime_stamp": "29042017000000"
+	}
+},	"0000002": {
+		"bank_balance": "500",
+		"datetime_stamp": "29042017000000"
+}, 	"0000003": {
+		"bank_balance": "500",
+		"datetime_stamp": "29042017000000"
+}]
