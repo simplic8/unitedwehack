@@ -1,6 +1,6 @@
 var app = angular.module('angularjs-starter', []);
 
-app.controller('MainCtrl', function($scope, Session) {
+app.controller('SaveSessionCtrl', function($scope, Session) {
   $scope.name = 'World';
   $scope.session = Session;
 });
