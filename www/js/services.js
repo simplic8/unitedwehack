@@ -1,5 +1,25 @@
 angular.module('starter.services', [])
 
+.factory('Session', function($http) {
+  var Session = {
+    //data: {},
+    saveSession: function() { /* save session data to db */ },
+    updateSession: function() { 
+      /* load data from db */
+      $http.get('../js/session.json')
+        .then(function(r) { 
+        //Session.data = r.data;
+        alert(r.data);
+        Session.data = r.data;
+        return Session.data;
+        //return Session = 124214;
+      });
+    }
+  };
+  Session.updateSession();
+  return Session; 
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

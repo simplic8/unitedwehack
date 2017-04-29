@@ -53,4 +53,12 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function($scope, Accounts, $stateParams) {
   $scope.items = Accounts.all();
+})
+
+.controller('SaveSessionCtrl', function($scope, Session, $stateParams) {
+  //$scope.name = 'World';
+  //$scope.session = Session;
+  //var result = JSON.parse(Session);
+  $scope.result = Session;
 });
+
