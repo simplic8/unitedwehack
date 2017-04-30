@@ -10,7 +10,8 @@ angular.module('starter.controllers', [])
   $scope.lineSeries = ['Active', 'Inactive'];
   $scope.lineLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
   $scope.lineData = [
-    [-10, 20, 80, 81, 56, 55, 40]//,
+    // feed in lineData $ave scoring
+    [-10, 20, 80, 81, 56, 55, 40]
     //[28, 48, 40, 19, 86, 27, 90]
   ];
 
