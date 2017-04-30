@@ -2,9 +2,27 @@
 <html>
 
 <head>
-
+<div class="chart" id="graph" ></div>
 <!-- json reader javascript -->
   <script type="text/javascript" src="../js/json_reader.js"></script>
+  
 </head>
+<body>
+<form >
+  Goal name:<br>
+  <input type="text" name="Goalname" id="goalname"><br>
+  Goal Description:<br>
+  <input type="text" name="Goaldescr" id="goaldescr"><br>
+  Goal amount<br>
+  <input type="number" name="Goalamount" id="goalamount">
+  
+
+<input type="submit" value="Submit" onclick="display()">
+</form>
+
+
+</body>
+
+
 
 </html>
