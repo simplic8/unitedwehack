@@ -1,9 +1,9 @@
-acct_details = '{ "bank_acct": "0000001", "bank_balance": "1000", "datetime": "29042017000000"}'
-
-
-
 function display()
 {
+
+// takes in data/service
+acct_details = '{ "bank_acct": "0000001", "bank_balance": "1000", "datetime": "29042017000000"}'
+
 var goalname = document.getElementById("goalname");
 var goaldescr = document.getElementById("goaldescr");
 var goalamount = document.getElementById("goalamount").value;
@@ -23,7 +23,8 @@ var options = {
 var canvas = document.createElement('canvas');
 var span = document.createElement('span');
 span.textContent = options.percent + '%';
-    
+
+
 if (typeof(G_vmlCanvasManager) !== 'undefined') {
     G_vmlCanvasManager.initElement(canvas);
 }
@@ -31,8 +32,10 @@ if (typeof(G_vmlCanvasManager) !== 'undefined') {
 var ctx = canvas.getContext('2d');
 canvas.width = canvas.height = options.size;
 
+
 el.appendChild(span);
 el.appendChild(canvas);
+
 
 ctx.translate(options.size / 2, options.size / 2); // change center
 ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
