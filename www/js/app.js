@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var ang_mod = angular.module('starter', ['ionic', 'chart.js', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'chart.js', 'starter.controllers', 'starter.services', 'ui.router'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -40,6 +40,12 @@ var ang_mod = angular.module('starter', ['ionic', 'chart.js', 'starter.controlle
   $stateProvider
 
   // setup an abstract state for the tabs directive
+  .state('signin', {
+    url: '/sign-in',
+    templateUrl: 'templates/sign-in.html',
+    controller: 'SignInCtrl'
+  })
+
   .state('tab', {
     url: '/tab',
     abstract: true,
@@ -91,7 +97,7 @@ var ang_mod = angular.module('starter', ['ionic', 'chart.js', 'starter.controlle
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
-  $ionicConfigProvider.tabs.position('bottom'); // other values: top
+  $urlRouterProvider.otherwise('/sign-in');
+  //$ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 });

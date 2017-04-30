@@ -1,5 +1,6 @@
 angular.module('starter.services', [])
 
+//this session object connects to the API/database and retrieves the query info
 .factory('Session', function($http) {
   var Session = {
     //data: {},
@@ -9,15 +10,29 @@ angular.module('starter.services', [])
       $http.get('../js/session.json')
         .then(function(r) { 
         //Session.data = r.data;
-        alert(r.data);
-        Session.data = r.data;
-        return Session.data;
-        //return Session = 124214;
+        return Session.data = r.data;
       });
     }
   };
   Session.updateSession();
   return Session; 
+})
+
+//this session object validates the username and password
+.factory('AuthLogin', function($http) {
+  var AuthLogin = {
+    //data: {},
+    authenticate: function() { 
+      /* load data from db */
+      $http.get('../js/login.json')
+        .then(function(r) { 
+        //Session.data = r.data;
+        return AuthLogin.data = r.data;
+      });
+    }
+  };
+  AuthLogin.authenticate();
+  return AuthLogin; 
 })
 
 .factory('Chats', function() {

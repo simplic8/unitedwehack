@@ -1,14 +1,13 @@
 <ion-view view-title="Dashboard">
   <ion-content>
 
-    <div class="dashboard-main-container animated bounceInDown">
-      <h3>D<span class="thin">esh</span> <b>A</b>tom</h3>
-      <div class="avatar-conatainer">
-        <span class="badge">10Xp</span>
-        <i class="badge-notify"></i>
+    <div class="dashboard-main-container animated bounceInDown">      
+      <div class="avatar-container">
+        <h3>Username</h3>
         <img ng-src="../img/profile.jpg">
       </div>
 
+<!--
       <ion-slide-box on-slide-changed="slideHasChanged($index)">
         
         <ion-slide>
@@ -34,11 +33,24 @@
         </ion-slide>
 
       </ion-slide-box>
+-->
 
+      <div>
+        You have accumulated <b>9000</b> points!
+        <br><br>
+        Your current goals are (in sequence):
+          <ul>
+            <li>Goal 1 - $1000</li>
+            <li>Goal 2 - $2000</li>
+            <li>Goal 3 - $3000</li>
+          </ul>
+        <p><br>
+      </div>      
     </div>
 
-    <div class="card chart-card">
+    <div class="card chart-card">      
       <div class="item item-text-wrap">
+        Your $aving Performance in the last 6 months:
         <canvas id="line" class="chart chart-line" data="lineData" labels="lineLabels" legend="true" series="lineSeries" options="{showTooltips: false}"></canvas>
       </div>
       <div class="item item-text-wrap">
