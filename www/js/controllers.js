@@ -11,8 +11,8 @@ angular.module('starter.controllers', [])
   $scope.lineLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
   $scope.lineData = [
     // feed in lineData $ave scoring
-    [-10, 20, 80, 81, 56, 55, 40]
-    //[28, 48, 40, 19, 86, 27, 90]
+    [-10, 20, 80, 81, 56, 55, 40],
+    [28, 48, 40, 19, 86, 27, 90]
   ];
 
   // --------------------- animation for green color .badge-notification icon---
