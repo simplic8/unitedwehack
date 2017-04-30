@@ -1,12 +1,13 @@
 <ion-view view-title="Dashboard">
   <ion-content>
-
+    
     <div class="dashboard-main-container animated bounceInDown">
       <h3>D<span class="thin">esh</span> <b>A</b>tom</h3>
       <div class="avatar-conatainer">
         <span class="badge">10Xp</span>
         <i class="badge-notify"></i>
         <img ng-src="../img/profile.jpg">
+     
       </div>
 
       <ion-slide-box on-slide-changed="slideHasChanged($index)">
@@ -36,8 +37,7 @@
       </ion-slide-box>
 
     </div>
-
-    <div class="card chart-card">
+   <div class="card chart-card">
       <div class="item item-text-wrap">
         <canvas id="line" class="chart chart-line" data="lineData" labels="lineLabels" legend="true" series="lineSeries" options="{showTooltips: false}"></canvas>
       </div>
@@ -46,6 +46,7 @@
         </canvas>
       </div>
     </div>
+    
 
   </ion-content>
 </ion-view>
